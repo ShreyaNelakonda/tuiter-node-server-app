@@ -12,7 +12,6 @@ const createTuit = async (req, res) => {
     newTuit.time = "1s";
     const insertedTuit = await tuitsDao.createTuit(newTuit);
     res.json(insertedTuit);
-
 };
 
 const findTuits = async (req, res) => {
